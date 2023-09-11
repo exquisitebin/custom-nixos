@@ -80,15 +80,16 @@
 
   hardware.enableAllFirmware = true;
 
-  # services.xserver.screenSection = ''
-  #   Option "metamodes" "DP-1: 1920x1080_240 +1920+0, HDMI: 1920x1080_60 +0+0"
-  # '';
+  nova.desktop.browser.enable = lib.mkForce false;
 
-
-  home-manager.users.nova = {
+  home-manager.users.nova = {  
     programs.vscode.enable = lib.mkForce false;
 
-    dconf.settings."org/gnome/shell".favorite-apps = [ "code.desktop" ];
+    dconf.settings."org/gnome/shell".favorite-apps = [
+      "google-chrome.desktop"
+      "slack.desktop"
+      "code.desktop"
+    ];
 
     home.packages = with pkgs; [
       vscode
