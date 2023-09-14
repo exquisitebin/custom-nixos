@@ -100,6 +100,7 @@
       vim
       lshw
       spotify
+      zoom-us
     ];
   };
 }
