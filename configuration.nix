@@ -33,6 +33,7 @@
   nova = {
     profile = "shared";
     substituters.nova.password = "tFH6J!#HhrYc3&^m";
+    workspace.enable = true;
   };
 
   # NVIDIA
