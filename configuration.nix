@@ -83,7 +83,7 @@
 
   nova.desktop.browser.enable = lib.mkForce false;
 
-  home-manager.users.nova = {  
+  home-manager.users.nova = {
     programs.vscode.enable = lib.mkForce false;
 
     dconf.settings."org/gnome/shell".favorite-apps = [
@@ -94,6 +94,8 @@
 
     home.packages = with pkgs; [
       vscode
+      nixd
+      nixpkgs-fmt
       jetbrains.pycharm-professional
       slack
       obs-studio
