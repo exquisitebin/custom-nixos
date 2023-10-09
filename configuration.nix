@@ -83,6 +83,8 @@
 
   nova.desktop.browser.enable = lib.mkForce false;
 
+  nova.workspace.services.gui.enable = lib.mkForce false;
+
   home-manager.users.nova = {
     programs.vscode.enable = lib.mkForce false;
 
