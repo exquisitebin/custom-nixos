@@ -106,6 +106,7 @@
       lshw
       spotify
       zoom-us
+      firefox
     ];
   };
 }
