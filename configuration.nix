@@ -25,10 +25,16 @@
 
   networking.hostName = "infinity";
 
-  time.timeZone = "Melbourne/Australia";
+  time.hardwareClockInLocalTime = false;
+  time.timeZone = lib.mkDefault "Australia/Melbourne";
   i18n.defaultLocale = "en_AU.UTF-8";
 
   services.xserver.enable = true;
+
+  services.xserver.desktopManager.gnome.extraGSettingsOverrides = ''
+  [org.gnome.desktop.peripherals.touchpad]
+  click-method='default'
+'';
 
   nova = {
     profile = "shared";
