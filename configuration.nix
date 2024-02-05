@@ -59,15 +59,15 @@
     };
   };
 
-  specialisation = {
-    nvidia.configuration = {
-      system.nixos.tags = [ "nvidia" ];
-      services.xserver.videoDrivers = lib.mkAfter [ "nvidia" ];
-      hardware.nvidia.prime = {
-        sync.enable = lib.mkForce true;
-      };
-    };
-  };
+  # specialisation = {
+  #   nvidia.configuration = {
+  #     system.nixos.tags = [ "nvidia" ];
+  #     services.xserver.videoDrivers = lib.mkAfter [ "nvidia" ];
+  #     hardware.nvidia.prime = {
+  #       sync.enable = lib.mkForce true;
+  #     };
+  #   };
+  # };
 
   services.xserver.videoDrivers = [ "modesetting" ];
   services.switcherooControl.enable = true;
