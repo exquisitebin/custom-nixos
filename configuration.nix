@@ -108,7 +108,6 @@
       slack
       obs-studio
       google-chrome
-      vim
       lshw
       spotify
       zoom-us
