@@ -112,6 +112,7 @@
       spotify
       zoom-us
       firefox
+      platformio
     ];
   };
 }
